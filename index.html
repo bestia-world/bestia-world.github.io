@@ -1,21 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ko">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#060c0c">
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#060c0c" name="theme-color"/>
 <title>BESTIA WORLD | 베스티아 월드</title>
-<meta name="description" content="서로 다른 국가와 문화, 수많은 인물이 살아가는 하나의 세계. 베스티아 월드 공식 아카이브.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet">
+<meta content="서로 다른 국가와 문화, 수많은 인물이 살아가는 하나의 세계. 베스티아 월드 공식 아카이브." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Noto+Serif+KR:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--bg:#060c0c;--gold:#b69a67;--gold2:#d8bf8c;--cream:#f0e9d9;--muted:#bdb7a9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:'Noto Serif KR',serif}button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}.hero{position:relative;min-height:100svh;isolation:isolate;display:flex;flex-direction:column;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:url('assets/bestia-background.png') center center/cover no-repeat}.topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px clamp(25px,4vw,80px);position:relative;z-index:3}.brand{display:flex;align-items:center;gap:13px;min-width:190px}.brand-symbol{font-size:35px;color:var(--gold2);line-height:1}.brand-name{font-family:'Cormorant Garamond',serif;font-size:29px;letter-spacing:.12em;line-height:.83}.brand-name small{display:block;text-align:center;font-size:13px;letter-spacing:.33em;margin-top:8px;color:var(--gold)}.nav{display:flex;gap:clamp(13px,2.2vw,40px);align-items:center}.nav a{text-align:center;font-family:'Cormorant Garamond',serif;font-size:17px;letter-spacing:.045em;transition:color .2s}.nav a span{display:block;font-family:'Noto Serif KR',serif;font-size:10px;color:var(--gold);margin-top:4px}.nav a:hover,.nav a:focus-visible{color:var(--gold2)}.menu-toggle{display:none;background:transparent;color:var(--cream);border:1px solid #6c5a3c;padding:8px 12px}.hero-main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 24px 115px;position:relative}.eyebrow{font-family:'Cormorant Garamond',serif;color:var(--gold2);letter-spacing:.35em;font-size:clamp(11px,1.1vw,17px);margin:0 0 12px}.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(92px,13vw,205px);font-weight:500;line-height:.72;letter-spacing:.075em;margin:12px 0 0;text-shadow:0 2px 25px #0009}.world-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4.3vw,66px);letter-spacing:.45em;margin:15px 0 0;color:var(--gold2);padding-left:.45em}.intro{font-size:clamp(12px,1.05vw,16px);line-height:2.15;margin:23px 0 28px;text-shadow:0 2px 8px #000}.cta{border:1px solid var(--gold);color:var(--cream);padding:16px 43px;background:#050b0bc7;letter-spacing:.17em;font-family:'Cormorant Garamond',serif;font-size:17px;position:relative;transition:background .2s,transform .2s}.cta:hover{background:#3b3020;transform:translateY(-2px)}.cta:before,.cta:after{content:'✧';position:absolute;color:var(--gold);top:50%;transform:translateY(-50%);font-size:13px}.cta:before{left:-7px}.cta:after{right:-7px}.side-index{position:absolute;bottom:17%;left:clamp(24px,4vw,85px);display:grid;gap:19px;text-align:left;font-size:12px;color:#d2c7af}.side-index a:hover{color:white}.side-index b{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:19px;margin-right:15px}.scroll-hint{position:absolute;bottom:27px;left:50%;transform:translateX(-50%);font:15px 'Cormorant Garamond',serif;letter-spacing:.25em;color:var(--gold2);text-align:center}.scroll-hint span{display:block;font-size:20px;margin-top:3px}.section{max-width:1150px;margin:auto;padding:110px 28px}.section-kicker{font:17px 'Cormorant Garamond',serif;color:var(--gold);letter-spacing:.24em}.section h2{font:500 clamp(42px,6vw,70px) 'Cormorant Garamond',serif;margin:12px 0 18px}.section p{color:#c9c6bd;line-height:2;font-size:14px}.rule{height:1px;background:linear-gradient(90deg,transparent,#826c45,transparent);margin:0 auto}.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.tile{border:1px solid #574b34;min-height:205px;padding:30px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(150deg,#14201d,#080d0c 70%);transition:border-color .2s,transform .2s}.tile:hover{border-color:var(--gold2);transform:translateY(-3px)}.tile .num{color:var(--gold);font:18px 'Cormorant Garamond',serif}.tile h3{font:35px 'Cormorant Garamond',serif;margin:10px 0 4px}.tile p{margin:0;font-size:12px}.search-wrap{display:flex;gap:8px;margin-top:30px;max-width:480px}.search-wrap input{flex:1;min-width:0;background:#0c1412;border:1px solid #65563d;color:var(--cream);padding:13px}.search-wrap button{background:#6d593a;border:0;color:white;padding:0 20px}.empty{margin-top:18px;border:1px dashed #514938;padding:30px;color:#bdb5a5;font-size:13px}.footer{border-top:1px solid #514531;text-align:center;color:var(--gold);padding:34px 15px;font:16px 'Cormorant Garamond',serif;letter-spacing:.15em}@media(max-width:1000px){.nav{gap:14px}.nav a{font-size:15px}.brand{min-width:145px}.brand-name{font-size:23px}.side-index{display:none}}@media(max-width:700px){.hero:before{background-size:auto 100%;background-position:center}.topbar{padding:21px 20px}.brand-symbol{font-size:27px}.brand-name{font-size:22px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:74px;left:16px;right:16px;background:#080e0ef5;border:1px solid #6a573a;padding:18px;flex-direction:column;gap:19px}.nav.open{display:flex}.nav a{font-size:19px}.hero-main{padding:100px 14px 90px}.hero-title{font-size:clamp(65px,16vw,110px);letter-spacing:.025em}.world-title{font-size:clamp(25px,7vw,44px);letter-spacing:.35em}.intro{font-size:12px}.eyebrow{font-size:10px;letter-spacing:.19em}.tiles{grid-template-columns:1fr}.section{padding:70px 22px}.tile{min-height:145px}}
 </style>
-</head>
+<style>
+/* Integrated atlas: scoped to avoid affecting the homepage */
+.atlas-section{padding:70px 0 95px;background:#070e0e}.atlas-intro{text-align:center;padding:0 24px 28px}.atlas-intro h2{font:500 clamp(38px,5vw,65px) 'Cormorant Garamond',serif;margin:8px 0}.atlas-intro p{color:#c6bdac;font-size:14px}.atlas{--bg:#070e0e;--gold:#bda371;--cream:#f0e8d8;--muted:#b9b7aa}.atlas .details{scroll-margin-top:24px}.atlas .map-stage img{display:block}.atlas .panel img{height:auto}.hero .side-index{display:none}.atlas-section .atlas .frame{margin-top:0}#character .tile{cursor:default}#character .tiles{grid-template-columns:minmax(0,1fr);max-width:520px;margin:25px auto 0}
+#atlas *{box-sizing:border-box}
+#atlas{scroll-behavior:smooth}
+#atlas{margin:0;background:var(--bg);color:var(--cream);font-family:"Noto Serif KR",serif}
+#atlas a{color:inherit;text-decoration:none}
+#atlas button{font:inherit;cursor:pointer}
+#atlas header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px clamp(18px,4vw,64px);border-bottom:1px solid #4b432f;background:#080f0e}
+#atlas .brand{font:500 28px "Cormorant Garamond",serif;letter-spacing:.14em}
+#atlas .brand small{font-size:12px;letter-spacing:.24em;color:var(--gold)}
+#atlas header nav{display:flex;gap:25px;color:var(--gold);font-size:12px}
+#atlas header a:hover,#atlas header a:focus-visible{color:white}
+#atlas .heading{text-align:center;padding:55px 20px 32px}
+#atlas .eyebrow{font:17px "Cormorant Garamond",serif;color:var(--gold);letter-spacing:.24em}
+#atlas .heading h1{font:500 clamp(48px,7vw,82px) "Cormorant Garamond",serif;margin:8px 0}
+#atlas .heading p{font-size:13px;color:var(--muted);line-height:1.9}
+#atlas .frame{max-width:1540px;margin:0 auto;padding:0 18px}
+#atlas .map-scroll{overflow:auto;border:1px solid #796748;background:#0c191a;scrollbar-color:#8d7752 #101817}
+#atlas .map-stage{position:relative;min-width:860px;line-height:0;isolation:isolate}
+#atlas .map-stage img{width:100%;height:auto;display:block}
+#atlas .marker{position:absolute;transform:translate(-50%,-50%);z-index:1;background:#07100fe6;color:#f5e9d5;border:1px solid #d4b881;box-shadow:0 3px 18px #000b;padding:10px 18px;line-height:1.35;white-space:nowrap;text-align:center;transition:background .2s,box-shadow .2s}
+#atlas .marker strong{display:block;font-size:clamp(12px,1.25vw,17px);font-weight:600}
+#atlas .marker small{display:block;font:12px "Cormorant Garamond",serif;letter-spacing:.12em;color:#d4b881;margin-top:3px}
+#atlas .marker:hover,#atlas .marker:focus-visible,#atlas .marker[aria-pressed=true]{background:#3b3020;box-shadow:0 0 0 4px #c5a46b55;outline:none}
+#atlas .leonis{left:27%;top:30%}
+#atlas .liberta{left:49%;top:49%}
+#atlas .geumra{left:78%;top:58%}
+#atlas .hint{max-width:1540px;margin:10px auto 0;padding:0 18px;color:#bfb6a1;font-size:12px;text-align:right}
+#atlas .details{max-width:1150px;margin:35px auto 90px;padding:0 20px}
+#atlas .details h2{font:500 37px "Cormorant Garamond",serif;color:var(--gold);margin:0 0 17px}
+#atlas .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+#atlas .country{background:#101a18;border:1px solid #5e5138;text-align:left;color:var(--cream);padding:24px;min-height:142px}
+#atlas .country:hover,#atlas .country:focus-visible,#atlas .country.active{border-color:#d6bd8b;background:#19231e}
+#atlas .country span{font:24px "Cormorant Garamond",serif;color:var(--gold)}
+#atlas .country strong{display:block;font-size:16px;margin:9px 0}
+#atlas .country small{color:var(--muted);font-size:12px}
+#atlas .panel{margin-top:16px;border:1px solid #776444;background:#0d1513;padding:25px;min-height:115px}
+#atlas .panel h3{margin:0 0 9px;font-size:18px}
+#atlas .panel p{font-size:13px;color:#d0c9bb;line-height:1.9;margin:0}
+#atlas .foot{text-align:center;padding:25px;border-top:1px solid #4b432f;color:var(--gold);font:17px "Cormorant Garamond",serif;letter-spacing:.15em}
+@media (max-width:700px){#atlas header{padding:18px}
+#atlas .brand{font-size:22px}
+#atlas header nav{gap:12px;font-size:11px}
+#atlas .heading{padding:36px 16px 22px}
+#atlas .map-stage{width:900px}
+#atlas .marker{padding:9px 12px}
+#atlas .marker strong{font-size:14px}
+#atlas .hint{text-align:left}
+#atlas .cards{grid-template-columns:1fr}
+#atlas .country{min-height:90px;padding:16px}
+#atlas .details{margin-top:25px}}
+#atlas .detail-link{display:inline-block;margin-top:16px;padding:11px 18px;border:1px solid #bda371;color:#f0e8d8;font-size:13px;text-decoration:none}
+#atlas .detail-link:hover{background:#3b3020}
+#atlas .panel:has(.nation-full){padding:0;overflow:hidden}
+#atlas .nation-full{padding:clamp(18px,3vw,34px);line-height:1.85}
+#atlas .nation-full .nation-heading{font-size:clamp(23px,3vw,34px);font-weight:500;margin:0 0 6px}
+#atlas .nation-full .nation-subtitle{font:19px "Cormorant Garamond",serif;letter-spacing:.15em;color:var(--gold);margin-bottom:20px}
+#atlas .l-accordion{border-top:1px solid #64563b}
+#atlas .l-accordion:last-child{border-bottom:1px solid #64563b}
+#atlas .l-accordion summary{display:flex;justify-content:space-between;align-items:center;gap:15px;cursor:pointer;list-style:none;padding:19px 3px;color:#eadbc0;font-size:16px;font-weight:500}
+#atlas .l-accordion summary::-webkit-details-marker{display:none}
+#atlas .l-accordion summary span{color:var(--gold);font-size:22px;font-weight:400}
+#atlas .l-accordion[open] summary span{transform:rotate(45deg)}
+#atlas .l-content{padding:0 2px 22px}
+#atlas .l-content p{color:#d6cfc0;font-size:13px;line-height:1.95;margin:0 0 14px}
+#atlas .l-content .facts,#atlas .l-content .house-grid,#atlas .l-content .people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:15px 0}
+#atlas .l-content .fact,#atlas .l-content .house,#atlas .l-content .person{min-width:0;border:1px solid #62543c;background:#121c19;padding:18px}
+#atlas .l-content .fact strong{display:block;color:var(--gold);font-size:14px;margin-bottom:8px}
+#atlas .l-content .house h3{font-size:18px;font-weight:500;margin:5px 0}
+#atlas .l-content .house .en{font:16px "Cormorant Garamond",serif;color:var(--gold);letter-spacing:.1em}
+#atlas .l-content .tag{display:inline-block;border:1px solid #806c48;color:#d3b986;padding:3px 9px;font-size:11px}
+#atlas .l-content .person h4{color:#e6d6b6;font-size:14px;margin:0 0 7px}
+#atlas .l-content .person p,#atlas .l-content .fact p{font-size:12px;margin:0}
+#atlas .l-content .house .people{grid-template-columns:1fr}
+@media (max-width:700px){#atlas .l-content .facts,#atlas .l-content .house-grid,#atlas .l-content .people{grid-template-columns:1fr}
+#atlas .nation-full{padding:18px}
+#atlas .l-accordion summary{font-size:14px}}
+#atlas .l-content .liberta-profile{display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:22px;align-items:start;margin:18px 0;border:1px solid #62543c;background:#121c19;padding:18px}
+#atlas .liberta-profile img{width:100%;height:auto;display:block;object-fit:cover;border:1px solid #806c48}
+#atlas .liberta-profile h4{font-size:22px;margin:0 0 8px;color:#e9d8b7}
+#atlas .liberta-profile .meta{color:#c8ac78;font-size:12px;margin:0 0 12px}
+#atlas .liberta-profile p{margin:0 0 12px}
+#atlas .play-link{display:inline-block;margin-top:12px;padding:12px 19px;border:1px solid #bda371;color:#f0e8d8;font-size:13px;background:#1b221c}
+#atlas .play-link:hover,#atlas .play-link:focus-visible{background:#3b3020;outline:2px solid #bda371}
+@media (max-width:650px){#atlas .l-content .liberta-profile{grid-template-columns:1fr}
+#atlas .liberta-profile img{max-width:300px;margin:auto}}
+#atlas .leonis-collection{display:grid;gap:22px}
+#atlas .leonis-house{border:1px solid #6e5a3c;background:#101a17;overflow:hidden}
+#atlas .leonis-house-head{padding:22px 23px 15px;border-bottom:1px solid #4d422f}
+#atlas .leonis-house-head h3{margin:9px 0 2px;font-size:22px;font-weight:500;color:#f0e3cb}
+#atlas .leonis-house-head .en{font:16px "Cormorant Garamond",serif;letter-spacing:.16em;color:#bda371}
+#atlas .leonis-house-head p{margin:12px 0 0}
+#atlas .leonis-profile{display:grid;grid-template-columns:minmax(180px,34%) minmax(0,1fr);gap:24px;padding:22px}
+#atlas .leonis-profile img{display:block;width:100%;height:auto;max-height:650px;object-fit:contain;object-position:top;border:1px solid #6e5a3c;background:#0a1010}
+#atlas .leonis-profile-copy{min-width:0}
+#atlas .leonis-person-en{font:15px "Cormorant Garamond",serif;letter-spacing:.14em;color:#bda371}
+#atlas .leonis-profile-copy h4{font-size:24px;color:#f0e3cb;margin:3px 0 7px}
+#atlas .leonis-profile-copy .leonis-meta{font-size:12px;color:#d4b986;margin-bottom:16px}
+#atlas .leonis-profile-copy h5{font-size:14px;color:#d9bd88;margin:15px 0 6px}
+#atlas .leonis-profile-copy p{font-size:13px;line-height:1.9;margin:0 0 9px}
+@media (max-width:680px){#atlas .leonis-profile{grid-template-columns:1fr;gap:15px;padding:15px}
+#atlas .leonis-profile img{width:min(100%,370px);max-height:none;margin:0 auto}
+#atlas .leonis-house-head{padding:17px}}
+#atlas #backToTop{position:fixed;right:clamp(16px,3vw,34px);bottom:clamp(18px,4vh,34px);z-index:999;width:48px;height:48px;border:1px solid #aa8b59;border-radius:50%;background:rgba(9,19,19,.94);color:#e7d2a5;font-size:23px;cursor:pointer;box-shadow:0 5px 24px #0008;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .25s,transform .25s,visibility .25s}
+#atlas #backToTop.visible{opacity:1;visibility:visible;transform:translateY(0)}
+#atlas #backToTop:hover,#atlas #backToTop:focus-visible{background:#20302b;outline:2px solid #c5a572;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){#atlas #backToTop{transition:none}}</style><style>#backToTop{position:fixed;right:24px;bottom:24px;z-index:999;width:48px;height:48px;border:1px solid #aa8b59;border-radius:50%;background:#091313f0;color:#e7d2a5;font-size:23px;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .25s,transform .25s,visibility .25s}#backToTop.visible{opacity:1;visibility:visible;transform:none}#backToTop:focus-visible{outline:2px solid #fff}</style><style>
+.topbar{position:fixed!important;top:0;left:0;right:0;width:100%;z-index:99999!important;isolation:isolate;padding-top:15px;padding-bottom:15px;transition:background .2s,border-color .2s,box-shadow .2s;border-bottom:1px solid transparent}
+.topbar.is-scrolled{background:rgba(5,14,13,.94);border-bottom-color:rgba(182,154,103,.45);box-shadow:0 8px 28px #0007;backdrop-filter:blur(12px)}
+html{scroll-padding-top:95px}#nation,#world,#gallery,#countryPanel{scroll-margin-top:105px}
+.archive-link,.archive-cta{display:inline-block;margin:12px 10px 12px 0;padding:11px 18px;border:1px solid #a88c59;color:#e7d3a8!important;background:#0a1614;font-size:13px;text-decoration:none}.archive-link:hover,.archive-cta:hover{background:#273127}
+@media(max-width:700px){.topbar{padding:12px 16px}.nav{position:fixed;top:66px;left:12px;right:12px}.hero-main{padding-top:130px}}
+</style></head>
 <body>
+<div class="topbar"><a aria-label="BESTIA WORLD 홈" class="brand" href="#home"><span class="brand-symbol">✧</span><span class="brand-name">BESTIA<small>WORLD</small></span></a><button aria-controls="mainNav" aria-expanded="false" class="menu-toggle" id="menuToggle">☰ MENU</button><nav aria-label="메인 메뉴" class="nav" id="mainNav"><a href="#world">WORLD<span>세계관</span></a><a href="#nation">NATION<span>국가 소개</span></a><a href="characters.html">CHARACTER<span>캐릭터 도감</span></a><a href="#gallery">GALLERY<span>갤러리</span></a></nav></div>
 <header class="hero" id="home">
- <div class="topbar"><a class="brand" href="#home" aria-label="BESTIA WORLD 홈"><span class="brand-symbol">✧</span><span class="brand-name">BESTIA<small>WORLD</small></span></a><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ MENU</button><nav class="nav" id="mainNav" aria-label="메인 메뉴"><a href="#world">WORLD<span>세계관</span></a><a href="world.html">NATION<span>국가 소개</span></a><a href="#race">RACE<span>종족</span></a><a href="#character">CHARACTER<span>캐릭터 도감</span></a><a href="#gallery">GALLERY<span>갤러리</span></a><a href="#news">NEWS<span>소식</span></a></nav></div>
- <div class="hero-main"><p class="eyebrow">AN EXPANDING ORIGINAL UNIVERSE</p><h1 class="hero-title">BESTIA</h1><div class="world-title">WORLD</div><p class="intro">서로 다른 국가와 문화, 수많은 인물이 살아가는 하나의 세계.<br>이곳에서 베스티아의 이야기를 만나보세요.</p><a class="cta" href="world.html">EXPLORE THE WORLD ↓</a></div>
- <aside class="side-index" aria-label="빠른 이동"><a href="world.html"><b>I</b> 세계의 시작</a><a href="world.html"><b>II</b> 국가와 문화</a><a href="#race"><b>III</b> 종족과 인간</a><a href="#character"><b>IV</b> 그리고 당신의 이야기</a></aside><a class="scroll-hint" href="#world">SCROLL<span>⌄</span></a>
+<div class="hero-main"><p class="eyebrow">AN EXPANDING ORIGINAL UNIVERSE</p><h1 class="hero-title">BESTIA</h1><div class="world-title">WORLD</div><p class="intro">서로 다른 국가와 문화, 수많은 인물이 살아가는 하나의 세계.<br/>이곳에서 베스티아의 이야기를 만나보세요.</p><a class="cta" href="#world">EXPLORE THE WORLD ↓</a></div>
+<a class="scroll-hint" href="#world">SCROLL<span>⌄</span></a>
 </header>
-<main><section class="section" id="world"><span class="section-kicker">I · THE UNIVERSE</span><h2>Discover Bestia</h2><p>서로 다른 국가와 문화, 그리고 수많은 인물들이 살아가는 베스티아 월드.<br>세계관과 인물의 이야기를 한곳에서 탐험할 수 있도록 준비하고 있습니다.</p><div class="tiles"><a class="tile" href="world.html"><span class="num">01</span><h3>Nations</h3><p>국가와 문화 알아보기</p></a><a class="tile" href="#race"><span class="num">02</span><h3>Races</h3><p>종족과 형질 알아보기</p></a><a class="tile" href="#character"><span class="num">03</span><h3>Characters</h3><p>캐릭터와 플레이 링크 살펴보기</p></a></div></section><div class="rule"></div><section class="section" id="nation"><span class="section-kicker">II · NATIONS</span><h2>Nations</h2><p>세 대륙의 지도를 펼쳐 국가를 탐색해보세요. <a href="world.html" style="color:var(--gold2);text-decoration:underline">세계지도 열기 ↗</a></p></section><div class="rule"></div><section class="section" id="race"><span class="section-kicker">III · RACES</span><h2>Races</h2><p>종족과 형질에 관한 설정을 정리할 예정입니다.</p></section><div class="rule"></div><section class="section" id="character"><span class="section-kicker">IV · CHARACTERS</span><h2>Characters</h2><p>제작자와 플랫폼에 관계없이 베스티아 월드의 캐릭터를 모아볼 공간입니다.</p><form class="search-wrap" id="characterSearch"><input type="search" id="searchInput" aria-label="캐릭터 검색" placeholder="캐릭터 이름 검색 (준비 중)"><button type="submit">검색</button></form><div class="empty" id="searchResult" aria-live="polite">캐릭터 프로필은 추후 등록됩니다.</div></section><div class="rule"></div><section class="section" id="gallery"><span class="section-kicker">V · GALLERY</span><h2>Gallery</h2><p>일러스트 갤러리를 준비 중입니다.</p></section><div class="rule"></div><section class="section" id="news"><span class="section-kicker">VI · NEWS</span><h2>News</h2><p>새로운 소식이 이곳에 게시될 예정입니다.</p></section></main><footer class="footer">BESTIA WORLD · AN EXPANDING ORIGINAL UNIVERSE</footer>
-<script>const toggle=document.getElementById('menuToggle'),nav=document.getElementById('mainNav');toggle.addEventListener('click',()=>{let open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));document.getElementById('characterSearch').addEventListener('submit',e=>{e.preventDefault();const q=document.getElementById('searchInput').value.trim();document.getElementById('searchResult').textContent=q?`‘${q}’ 검색: 아직 등록된 캐릭터가 없습니다.`:'캐릭터 프로필은 추후 등록됩니다.'});</script>
-</body></html>
+<main><section class="section" id="world"><span class="section-kicker">I · THE UNIVERSE</span><h2>Discover Bestia</h2><p>서로 다른 국가와 문화, 수많은 인물이 살아가는 하나의 세계.<br/>베스티아의 국가와 인물들의 이야기를 만나보세요.</p></section><div class="rule"></div><section class="atlas-section" id="nation"><div class="atlas-intro"><span class="section-kicker">II · NATIONS</span><h2>Atlas of Bestia</h2><p>지도를 선택하면 아래에서 국가의 문화와 주요 인물을 바로 살펴볼 수 있습니다.</p></div><div class="atlas" id="atlas"><div class="frame"><div aria-label="베스티아 세계지도, 작은 화면에서는 좌우로 스크롤" class="map-scroll" tabindex="0"><div class="map-stage"><img alt="베스티아 세계지도. 북서쪽 레오니스 제국, 중앙 리베르타 공화국, 동쪽 금라국이 표시된 고풍스러운 판타지 지도" src="assets/bestia-map.png"/><button aria-pressed="false" class="marker leonis" data-country="leonis" type="button"><strong>레오니스 제국</strong><small>LEONIS EMPIRE</small></button><button aria-pressed="false" class="marker liberta" data-country="liberta" type="button"><strong>리베르타 공화국</strong><small>LIBERTA REPUBLIC</small></button><button aria-pressed="false" class="marker geumra" data-country="geumra" type="button"><strong>금라국</strong><small>GEUMRA</small></button></div></div></div><p class="hint">모바일에서는 지도를 좌우로 움직여 볼 수 있어요.</p><section class="details" id="countries"><h2>Explore the Nations</h2><div class="cards"><button class="country" data-country="leonis"><span>01 / WEST</span><strong>레오니스 제국</strong><small>LEONIS EMPIRE</small></button><button class="country" data-country="liberta"><span>02 / CENTER</span><strong>리베르타 공화국</strong><small>LIBERTA REPUBLIC</small></button><button class="country" data-country="geumra"><span>03 / EAST</span><strong>금라국</strong><small>GEUMRA</small></button></div><div aria-live="polite" class="panel" id="countryPanel"><h3>국가를 선택해 주세요</h3><p>국가별 상세 설정은 앞으로 이곳에 추가할 예정입니다.</p></div></section></div></section><div class="rule"></div><section class="section" id="character"><span class="section-kicker">III · CHARACTERS</span><h2>Character Archive</h2><p>베스티아의 인물들을 국가와 신분에 관계없이 만나보세요. 캐릭터 프로필과 플레이 링크는 도감에 모아두었습니다.</p><a class="archive-cta" href="characters.html">캐릭터 도감 열기 ↗</a></section><div class="rule"></div><section class="section" id="gallery"><span class="section-kicker">IV · GALLERY</span><h2>Gallery</h2><p>베스티아의 일러스트 아카이브를 준비 중입니다.</p></section><template id="leonis-template"><div class="nation-full"><h3 class="nation-heading">레오니스 제국</h3><div class="nation-subtitle">LEONIS EMPIRE · THE WESTERN EMPIRE</div><p>오랜 귀족의 전통과 새로운 산업의 시대가 공존하는 서방의 강대한 제국.</p><details class="l-accordion" open=""><summary>제국 개요<span aria-hidden="true">＋</span></summary><div class="l-content"><p>사자 황실이 통치하는 서방의 빅토리아풍 산업·귀족국가. 수도에는 웅장한 황궁과 귀족 저택, 석조 건축물이 늘어서고 가스등이 밝히는 대로를 따라 마차가 오간다. 증기기관차와 거대한 공장, 광산과 제철업이 발전하면서 전통적인 귀족 사회에도 변화가 찾아오고 있다.</p><p>황실 아래에는 늑대·곰·호랑이·뱀의 4대 공작가가 자리한다. 각 가문은 수도에 공작저를 두고 별도의 영지를 다스리며, 고유한 이해관계와 권력을 유지한다.</p><div class="facts"><div class="fact"><strong>통치와 계승</strong><p>정통 황실 혈통의 사자만 형질과 무관하게 황위를 계승한다. 황제는 ‘알파’, 배우자는 ‘루나’로 칭한다.</p></div><div class="fact"><strong>귀족의 호칭</strong><p>귀족의 배우자는 외형·형질과 관계없이 ‘파르’로 칭한다. 파르는 독립 작위가 아니며 공작부인·공작부군 등의 성별 호칭은 쓰지 않는다.</p></div><div class="fact"><strong>황실의 전통</strong><p>황실 혈통은 사자의 갈기를 상징하는 머리카락을 평생 자르지 않는다.</p></div><div class="fact"><strong>신분과 종족</strong><p>종족과 귀족 신분은 별개다. 가문의 법적 계승권이 우선하지만 황위 계승에는 정통 사자 혈통이라는 별도 조건이 적용된다.</p></div></div></div></details><details class="l-accordion"><summary>사회와 문화<span aria-hidden="true">＋</span></summary><div class="l-content"><div class="facts"><div class="fact"><strong>귀족 사교계</strong><p>황실 무도회, 살롱, 티파티, 승마와 사냥 모임이 활발하다. 사교 시즌에는 귀족들이 수도에 모이고 혼인·후원·평판은 정치적 입지에도 영향을 미친다.</p></div><div class="fact"><strong>산업과 도시</strong><p>증기기관과 철도, 광산과 제철업, 금융과 국제무역이 발전했다. 화려한 귀족 거리와 공장지대, 노동자 거주지가 공존한다.</p></div><div class="fact"><strong>권력의 균형</strong><p>황실과 4대 공작가는 협력하면서도 서로 견제한다. 공작가들은 각자의 영지와 경제·군사 기반을 통해 제국의 정치에 영향력을 행사한다.</p></div><div class="fact"><strong>변화하는 시대</strong><p>황족·귀족·평민의 신분 질서 속에서 신흥 자본가가 부상한다. 오래된 혈통과 새로운 부의 가치가 충돌한다.</p></div></div></div></details><details class="l-accordion"><summary>레오니스 황실<span aria-hidden="true">＋</span></summary><div class="l-content"><p>정통 황족 중 사자만 황위를 계승한다. 솔·테라의 구분은 황위 계승 조건이 아니다.</p><div class="people"><div class="person"><h4>쟈크 레오니스 · 현 알파</h4><p>48세 · 사자 · 솔. 금발 장발과 호박색 눈. 위엄 있고 온화하지만 냉철한 정치가.</p></div><div class="person"><h4>라비엔 세르카 · 현 루나</h4><p>붉은여우 · 남성형 테라. 붉은 머리와 녹색 눈. 영리하고 능글맞으며 사교와 정치에 능하다.</p></div></div></div></details><details class="l-accordion"><summary>4대 공작가와 주요 인물<span aria-hidden="true">＋</span></summary><div class="l-content leonis-collection"><article class="leonis-house"><div class="leonis-house-head"><span class="tag">호랑이 · 무력과 명예</span><h3>티그란트 공작가</h3><div class="en">HOUSE TIGRANT</div><p>무력과 무예, 명예를 중시하는 호랑이 가문. 황실에 충성하되 부당한 간섭을 거부하며, 수도 공작저와 별도의 영지를 유지한다.</p></div><a class="archive-link" href="characters.html#aaron">인물 도감에서 애런 티그란트 보기 ↗</a></article><article class="leonis-house"><div class="leonis-house-head"><span class="tag">늑대 · 충성심과 결속</span><h3>루프가르드 공작가</h3><div class="en">HOUSE LUPGARD</div><p>군사 지휘와 조직력에 뛰어난 늑대 가문. 높은 충성심과 결속력으로 유명하며, 대대로 사교적이고 고결한 명문가로 제국의 군사적 안정을 뒷받침한다.</p></div><a class="archive-link" href="characters.html#raphael">인물 도감에서 라파엘 루프가르드 보기 ↗</a></article><article class="leonis-house"><div class="leonis-house-head"><span class="tag">곰 · 광산과 군수 산업</span><h3>그라벤하르트 공작가</h3><div class="en">HOUSE GRAVENHARDT</div><p>광대한 영지와 광산, 제철업을 기반으로 막대한 부를 축적한 곰 가문. 군수 산업과 국경 방위를 담당하며 엄격한 위계와 실력주의를 중시한다.</p></div><a class="archive-link" href="characters.html#victor">인물 도감에서 빅터 그라벤하르트 보기 ↗</a></article><article class="leonis-house"><div class="leonis-house-head"><span class="tag">뱀 · 외교와 금융</span><h3>비타일 공작가</h3><div class="en">HOUSE VITAIL</div><p>외교·정보·정치·금융에 뛰어난 뱀 가문. 비타일 상회를 비롯한 국제 거래망과 정보망을 통해 귀족 사회와 상업계 모두에 영향력을 행사한다.</p></div><a class="archive-link" href="characters.html#allen">인물 도감에서 알렌 비타일 보기 ↗</a></article></div></details></div></template><template id="liberta-template"><div class="nation-full"><h3 class="nation-heading">리베르타 공화국</h3><div class="nation-subtitle">LIBERTA REPUBLIC · THE MARITIME REPUBLIC</div><p>자유와 평등을 내세우지만, 부와 영향력이 실질적인 권력을 결정하는 해상무역 공화국.</p>
+<details class="l-accordion" open=""><summary>국가 개요<span aria-hidden="true">＋</span></summary><div class="l-content"><p>지중해풍 해상무역 공화국. 시민이 선출한 의회와 집정관이 통치하며, 국적·종족·출신보다 자본과 실력이 사회적 지위를 좌우한다. 그러나 실권은 거대 상단과 유력 가문이 쥐고 있다.</p><div class="facts"><div class="fact"><strong>정치 체제</strong><p>시민이 선출하는 의회와 집정관이 통치한다. 상단과 금융가들의 자금력이 정책과 권력에 큰 영향을 미친다.</p></div><div class="fact"><strong>경제</strong><p>해상무역·항만·금융·상업이 발달했다. 세계 각지의 상선과 여행자들이 항구를 오간다.</p></div><div class="fact"><strong>사회</strong><p>다양한 종족과 출신이 공존하는 개방적인 사회지만, 극심한 빈부 격차가 존재한다.</p></div><div class="fact"><strong>법과 치안</strong><p>법과 치안은 존재하지만 부와 영향력에 따라 집행이 달라진다. 권력층과 범죄조직의 유착도 만연하다.</p></div></div></div></details>
+<details class="l-accordion"><summary>도시와 문화<span aria-hidden="true">＋</span></summary><div class="l-content"><p>따뜻한 해안을 따라 흰 석조 건물과 붉은 기와지붕, 아치형 회랑과 광장이 이어진다. 항구와 시장, 운하를 중심으로 상업이 발달했으며, 선술집과 거리 공연, 축제와 가면무도회가 도시를 활기차게 만든다.</p><p>화려한 상업지구와 부유한 상인의 저택 뒤편에는 빈민가와 밀수 창고, 불법 거래가 이루어지는 뒷골목이 공존한다. 사교 모임은 오락인 동시에 정치적 협상과 은밀한 거래의 장이 되기도 한다.</p></div></details>
+<details class="l-accordion"><summary>지하세계와 대경매장<span aria-hidden="true">＋</span></summary><div class="l-content"><p>밀수·암시장·해적·청부업·정보 거래가 성행하며 합법 기업과 지하 조직이 복잡하게 얽혀 있다. 일부 범죄조직은 상단이나 운송업체 등의 합법 사업을 통해 활동한다.</p><div class="fact"><strong>대경매장</strong><p>리베르타 공화국의 거대한 지하 경매장. 도난품·금지 유물·기밀정보·희귀 혈통의 수인 등 온갖 불법 거래가 이루어지며 인신매매까지 자행된다. 막대한 자금과 정치적 비호로 치안 당국도 쉽게 개입하지 못한다.</p><p><strong>소유주 · 체이스 발렌틴</strong> — 뒷조직 ‘크로우’의 보스이자 발렌틴 상회 대표. 대경매장을 소유·운영하며 리베르타의 암시장에 막대한 영향력을 행사한다.</p></div></div></details>
+<details class="l-accordion"><summary>주요 인물과 해상 세력<span aria-hidden="true">＋</span></summary><div class="l-content"></div></details></div></template></main><footer class="footer">BESTIA WORLD · AN EXPANDING ORIGINAL UNIVERSE</footer>
+<script>const toggle=document.getElementById('menuToggle'),nav=document.getElementById('mainNav');toggle.addEventListener('click',()=>{let open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));</script>
+<script>
+const info={liberta:['리베르타 공화국','평야와 숲, 항구 무역도시가 발달한 공화국. 상세 설정은 추후 등록됩니다.'],geumra:['금라국','동방에 자리한 국가. 역사와 문화, 소속 인물은 추후 등록됩니다.']};
+const controls=[...document.querySelectorAll('[data-country]')];
+const panel=document.getElementById('countryPanel');
+const leonisTemplate=document.getElementById('leonis-template');
+const libertaTemplate=document.getElementById('liberta-template');
+controls.forEach(btn=>btn.addEventListener('click',()=>{
+ const key=btn.dataset.country;
+ controls.forEach(b=>{const selected=b.dataset.country===key;b.classList.toggle('active',selected);if(b.classList.contains('marker'))b.setAttribute('aria-pressed',String(selected));});
+ panel.replaceChildren();
+ if(key==='leonis') panel.append(leonisTemplate.content.cloneNode(true));
+ else if(key==='liberta') panel.append(libertaTemplate.content.cloneNode(true));
+ else {const h=document.createElement('h3');h.textContent=info[key][0];const p=document.createElement('p');p.textContent=info[key][1];panel.append(h,p);}
+ panel.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+}));
+</script><script>
+(()=>{const button=document.getElementById('backToTop');const update=()=>button.classList.toggle('visible',window.scrollY>420);window.addEventListener('scroll',update,{passive:true});update();button.addEventListener('click',()=>window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));})();
+</script><button aria-label="맨 위로 이동" id="backToTop" title="맨 위로" type="button">↑</button><script>const headerBar=document.querySelector('.topbar');function updateHeader(){headerBar.classList.toggle('is-scrolled',window.scrollY>50)}window.addEventListener('scroll',updateHeader,{passive:true});updateHeader();</script></body></html>
